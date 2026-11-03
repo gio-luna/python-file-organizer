@@ -1,17 +1,29 @@
-# 📁 Python File Organizer
+# File Organizer
 
-Uno script Python leggero e automatizzato per organizzare ed ordinare file all'interno di qualsiasi cartella in base alla loro estensione.
+A lightweight Python utility that organizes files into category folders based on their file extensions.
 
-## 🚀 Caratteristiche
-- **Smistamento Automatico:** Separa automaticamente immagini, documenti, video, archivi, musica e file di codice.
-- **Creazione Dinamica:** Crea le sottocartelle solo quando necessarie.
-- **Gestione Errori:** Gestisce file con estensioni sconosciute spostandoli in `Altro/`.
+## Requirements
 
-## 🛠️ Requisiti
-- Python 3.x
+- Python 3
 
-## 💻 Come usarlo
-1. Clona il repository:
-   ```bash
-   git clone [https://github.com/TUO_NOME_UTENTE/python-file-organizer.git](https://github.com/TUO_NOME_UTENTE/python-file-organizer.git)
-   cd python-file-organizer
+## Usage
+
+Run the script:
+
+```bash
+python3 organizer.py
+```
+
+When prompted, enter the path to the folder you want to organize. The script processes files in that folder only; it does not scan subfolders.
+
+## Categories
+
+- Images: `.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`, `.svg`
+- Documents: `.pdf`, `.docx`, `.txt`, `.odt`, `.xlsx`, `.pptx`, `.csv`
+- Archives: `.zip`, `.rar`, `.7z`, `.tar`, `.gz`
+- Videos: `.mp4`, `.mkv`, `.avi`, `.mov`
+- Audio: `.mp3`, `.wav`, `.flac`
+- Code: `.py`, `.js`, `.html`, `.css`, `.cpp`, `.c`, `.java`
+- Other file extensions are placed in `Other/`.
+
+Files without an extension and subfolders are left in place. The script moves files, so verify the selected folder before running it.
